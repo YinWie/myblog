@@ -35,7 +35,7 @@ export default {
 <style scoped>
 a {
   color: #1D1D1F;
-  white-space: nowrap;
+  
   text-decoration: none;
 }
 .pc {
