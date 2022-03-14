@@ -50,7 +50,7 @@ export default {
       let M = Math.floor(m);
       let s = (m - M) * 60
       let S = Math.floor(s);
-      return "🧡 🌊🌅" + D + "天 " + H + " 小时 " + M + " 分 " + S + " 秒 "
+      return  D + "天 " + H + " 小时 " + M + " 分 " + S + " 秒 "
     }
   }
 }

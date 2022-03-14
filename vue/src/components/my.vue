@@ -83,7 +83,6 @@ p {
   text-align: left;
   text-indent: 2em;
   color: #707579;
-
 }
 
 .pc {

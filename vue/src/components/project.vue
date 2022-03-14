@@ -1,22 +1,25 @@
 <template>
   <div class="">
     <div class="pc hidden-md-and-down">
-      <a :href='link'  class="im">
+      <a :href='link' class="im">
         <img :src="imgSrc" width="100%" height="100%" alt=""/>
       </a>
       <a :href='link' class="introduce">
         <h2>{{ names }}</h2>
+
         <p>{{ datas }}</p>
       </a>
 
     </div>
     <div class="phone hidden-lg-and-up">
-      <a class="im" :href='link' >
+      <a class="im" :href='link'>
         <img :src="imgSrc" width="100%" height="100%" alt=""/>
       </a>
-      <a :href='link'  class="introduce-phone">
+      <a :href='link' class="introduce-phone">
         <h3>{{ names }}</h3>
+
         <p>{{ datas }}</p>
+
       </a>
 
     </div>
@@ -28,16 +31,24 @@ import 'element-ui/lib/theme-chalk/display.css';
 
 export default {
   name: "project",
-  props: ['names', 'imgSrc', "datas",'link'],
+  props: ['names', 'imgSrc', "datas", 'link'],
 }
 </script>
 
 <style scoped>
+p {
+
+  word-wrap: break-word;
+
+
+}
+
+
 a {
   color: #1D1D1F;
-  
   text-decoration: none;
 }
+
 .pc {
   height: 250px;
   width: 700px;
@@ -47,6 +58,7 @@ a {
   flex-direction: row;
   justify-content: center;
 }
+
 .phone {
   height: 150px;
   width: 360px;
@@ -58,6 +70,7 @@ a {
 
 
 }
+
 .im {
   width: 30%;
   height: 100%;
@@ -66,6 +79,7 @@ a {
   align-items: center;
 
 }
+
 .introduce {
   width: 70%;
   display: flex;
