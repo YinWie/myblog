@@ -21,7 +21,7 @@ export default {
   name: "foot",
   data() {
     return {
-      record: "冀ICP备2021025902号",
+      record: "冀ICP备2021025902号-1",
       newDate: new Date()
     }
   },
